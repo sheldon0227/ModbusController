@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>378</width>
+      <height>122</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="iPAddressLabel">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>IP address</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="iPAddressLineEdit_1">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="iPAddressLineEdit_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="iPAddressLineEdit_3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="iPAddressLineEdit_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="portLabel">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Port</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="portLineEdit">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="unitIDLabel">
+       <property name="font">
+        <font>
+         <family>Aharoni</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Unit ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="unitIDLineEdit">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="handleConnectButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(40, 222, 40);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="activeUnitWidget">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>20</y>
+      <width>301</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkConnectionBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>221</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>check connection</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delItemButton">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>440</y>
+      <width>299</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Aharoni</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+ 
+ 
+font: 75 12pt &quot;Aharoni&quot;;
+background-color: rgb(255, 85, 0);
+ 
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>722</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCONFIG">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionImport"/>
+   </widget>
+   <widget class="QMenu" name="menuSelected">
+    <property name="title">
+     <string>Operate(&amp;O)</string>
+    </property>
+    <widget class="QMenu" name="menuAll">
+     <property name="title">
+      <string>All Units</string>
+     </property>
+     <addaction name="actionSet_All_Register"/>
+     <addaction name="action_Send_All"/>
+     <addaction name="separator"/>
+     <addaction name="actionCheck_Connections_2"/>
+    </widget>
+    <widget class="QMenu" name="menuSelected_2">
+     <property name="title">
+      <string>Selected Units</string>
+     </property>
+     <addaction name="actionSet_Seleted_Register"/>
+     <addaction name="actionSend_Seleted_Units"/>
+    </widget>
+    <addaction name="menuAll"/>
+    <addaction name="separator"/>
+    <addaction name="menuSelected_2"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuCONFIG"/>
+   <addaction name="menuSelected"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionSend_All_Units">
+   <property name="text">
+    <string>Send All Units </string>
+   </property>
+  </action>
+  <action name="actionSet_All_Register">
+   <property name="text">
+    <string>Set All Registers</string>
+   </property>
+  </action>
+  <action name="action_Send_All">
+   <property name="text">
+    <string>Send To All Registers</string>
+   </property>
+  </action>
+  <action name="actionSet_Seleted_Register">
+   <property name="text">
+    <string>Specific Registers Setting</string>
+   </property>
+  </action>
+  <action name="actionSend_Seleted_Units">
+   <property name="text">
+    <string>Send All Registers Of Selected Units</string>
+   </property>
+  </action>
+  <action name="actionCheck_Connections">
+   <property name="text">
+    <string>Check Connections</string>
+   </property>
+  </action>
+  <action name="actionCheck_Connections_2">
+   <property name="text">
+    <string>Check Connections</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
